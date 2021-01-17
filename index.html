@@ -1,0 +1,23 @@
+ <form action="https://random.joelee.ga/clicked" method="GET">
+  <input type="text" id="channel" name="channel"><br><br>
+  <input type="text" id="value" name="value"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+<script>
+
+function bye(){
+fetch('/clicked', {method: 'POST'})
+    .then(function(response) {
+      if(response.ok) {
+        console.log('Click was recorded');
+        return;
+      }
+      throw new Error('Request failed.');
+    })
+    .catch(function(error) {
+      console.log(error);
+    });
+
+}
+
+</script>
