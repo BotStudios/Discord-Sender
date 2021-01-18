@@ -1,0 +1,76 @@
+@import "compass/css3";
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700);
+
+/* VARS */
+$height: 40px;
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html { font-size: 62.5%; }
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container {
+  margin: 16rem auto;
+  max-width: 700px;
+}
+
+form {
+  margin: 2rem 0;
+  
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  
+  .field {
+    display: block;
+    border: 1px solid #BDBDBD;
+    float: left;
+    width: 100%;
+    
+    &.tnb {
+      border-top: 0;
+    }
+    
+    &.half {
+      width: 50%;
+    }
+    
+    &.last {
+      border-left: 0;
+    }
+    
+    label {
+      display: block;
+      font-size: 1.2rem;
+      padding: 1.5rem 2rem 0;
+      text-transform: uppercase;
+      color: #999;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    
+    input,
+    textarea {
+      display: block;
+      width: 100%;
+      padding: .5rem 2rem 1.5rem;
+      font-size: 1.8rem;
+      border: 0;
+      color: #212121;
+      outline: 0;
+    }
+    
+    textarea {
+      min-height: 150px;
+      resize:vertical; 
+    }
+  }
+}
