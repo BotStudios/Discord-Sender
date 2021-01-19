@@ -79,6 +79,17 @@ form {
       color: #999;
       font-weight: 700;
       letter-spacing: 1px;
+      
+      
+    +position(absolute, 50% null null 0px)
+    +transform(translateY(-50%))
+    font:
+      family: $georgia
+      style: italic
+      size: 18px
+    color: #999
+    pointer-events: none
+    +transition
     }
     
     input,
