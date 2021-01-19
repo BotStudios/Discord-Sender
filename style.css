@@ -9,7 +9,7 @@ $height: 40px;
 *, *:before, *:after {
   box-sizing: border-box;
 }
-input[type=text], select, textarea {
+input[type=text], select, textarea, input[type=url], input[type=color]{
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
