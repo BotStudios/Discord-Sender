@@ -1,27 +1,10 @@
    <link rel="stylesheet" href="./style.css">
 
 <div id="container" class="container"> 
-<form action="https://shell.joelee.ga/clicked" method="GET">
+<form action="https://ws.is-a.dev/message" method="GET">
   <input type="text" id="channel" placeholder="Channel ID" name="channel" required><br><br>
    <textarea id="value" name="value" placeholder="Send Some Messages ...." style="height:200px" required></textarea>
    <center> <input type="submit" value="Send"></center>
 </form> 
 </div>
-<script>
 
-function bye(){
-fetch('/clicked', {method: 'POST'})
-    .then(function(response) {
-      if(response.ok) {
-        console.log('Click was recorded');
-        return;
-      }
-      throw new Error('Request failed.');
-    })
-    .catch(function(error) {
-      console.log(error);
-    });
-
-}
-
-</script>
